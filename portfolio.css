@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    }
+
+.sidebar{
+    background-color: rgb(139, 145, 145);
+    width: 15vw ;
+    height: 100vh;
+}
+
+.sidebar nav{
+padding: 40px;
+}  
+
+.sidebar nav li{
+
+    padding-bottom:20vh;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+
+.sidebar nav a:hover
+{
+    background-color: black;
+}
+
+.sidebar nav a{
+
+    padding: 10px;
+    color: azure;
+}
+
+
+
+
+.main{
+
+    background-color: lightcyan;
+    height: 100vh;
+    width: 90vw;
+}    
+
+.info{
+    margin: 144px auto;
+    display: flex;
+    width: 80vw;
+    height: 45vh;
+    background-color: dimgrey;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.Hello{
+    padding: 10px;
+    font-size: 60px;
+     }
+
+ .name{
+    padding: 10px;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.about {
+    padding: 10px;
+    font-size: 30px;
+}
+
+.button-DR button{
+    padding: 20px;
+    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 15% 30%;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight:bold;
+    font-family: 'Permanent Marker', cursive;
+    }
+
+.button-DR button:hover{
+    background-color: white;
+    color:darkgray;
+}    
+
+
+.myimg img{
+    padding-top: 40px;
+    width: 230px;
+    padding-right: 10px;
+}
+
+/* ..................... contact form .......................... */
+
+.contact_me_heading{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 30px;
+}
+
+.form_heading{
+text-align: center;
+padding-top: 10px;
+font-family: 'Lobster', cursive;
+padding-bottom: 10px;
+}
+
+.contactform{
+    background-color:rgb(204, 137, 137);
+    margin: 144px auto;
+    width: 80vw;
+    height: 50vh;
+    border-radius: 30px;
+}
+
+.fname{
+    padding-left: 300px;
+    font-size: 30px;
+    
+    }
+
+.lname{
+        padding-left: 300px;
+        font-size: 30px;
+        }
+    
+.emails{
+            padding-left: 80px;
+            font-size: 30px;
+            }
+
+.mobile{
+           padding-left: 100px;
+           font-size: 30px;
+                }
+
+input{
+    /* width: ; */
+    height: 30px;
+    padding-left:20px;
+    border-radius: 10px;
+    border-color: black;
+}
+.inputemail{
+    width: 200px;
+}
+
+.submit_detail{
+    font-size: 20px;
+    margin-left:470px;
+    border-radius: 15px;
+    padding: 10px 20px ;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+/* skills css */
+
+.skill-heading{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 30px;
+}
+
+.skill-box
+{
+    margin: 100px auto;
+    display: flex;
+    width: 70vw;
+    height: 63vh;
+    background-color:ghostwhite ;
+    justify-content: space-between;
+    border-radius: 25px;
+    padding: 20px 10px;
+}  
+
+.bar{
+    margin: 45px 30px;
+}
+
+.bar .inform span{
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.skill-bar .bar .progress-line{
+    height: 10px;
+    width: 900px;
+    margin-top: 10px;
+    position: relative;
+    background-color:rgb(242, 227, 227);
+    border-radius: 30px;
+    transform-origin: left;
+    transform: scaleX(0);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px  rgba(255,255,255,0.8);
+     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;                  
+} 
+
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background:#6665ee;
+    position: absolute;
+    border-radius:30px;
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;                  
+
+}
+
+@keyframes animate {
+    100%{
+    transform: scaleX(1);
+    }
+    
+}
+
+.progress-line.html span
+{
+width: 90%;
+}
+.progress-line.css span
+{
+width: 80%;
+
+}
+.progress-line.Javascript span
+{
+width: 50%;
+}
+.progress-line.java span
+{
+width:60%;
+}
+.progress-line.c span
+{
+width: 80%;
+}
+
+.bar .progress-line span::before
+{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+}
+.bar .progress-line span::after
+{
+    position: absolute;
+    right: 0;
+    top: -26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+ }
+
+.progress-line.html span::after
+{
+content: "90%";
+}
+.progress-line.css span::after
+{
+content: "80%";
+}
+.progress-line.Javascript span::after
+{
+content: "50%";
+}
+.progress-line.java span::after
+{
+content: "60%";
+}
+.progress-line.c span::after
+{
+content: "80%";
+}
+
+/* projects css */
+
+.project-heading{
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.project-box{
+    width: 37vw;
+    height: 50vh;
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color:pink;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.project-img
+{
+    border-radius: 30pxf 30px 0px 0px;
+    width: 100%;
+    height: 35vh;
+    
+}
+
+.project-name
+{
+    font-family:'Lobster', cursive ;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.visit
+{
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color:lightskyblue;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.project-boxes
+{
+    display: flex;
+}
